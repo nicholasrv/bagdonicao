@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* body {
+    margin: 3px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100vw;
+} */
+
+h1{
+    font-size: 4rem;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin: 0;
+    float: left;
+    line-height: 90px;
+    padding: 0 10px;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    margin: auto 30px;
+}
+
+nav p{
+    font-weight: bold;
+    position: relative;
+    line-height: 90px;
+    margin-right: 12px;
+
+}
+
+header{
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1590&q=80')
+}
