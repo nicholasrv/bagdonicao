@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+
+        <h1>Formulário de Cadastro</h1>
+
+        <p>Insira as informações abaixo.</p>
+
+        <div>
+            <label for="username">Nome Completo</label>
+            <input type="text" name="username" id="username">
+        </div>
+
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div>
+                <label for="userPassword">Senha</label>
+                <input type="password" name="userPassword" id="userPassword">
+        </div>
+
+        <div>
+            <label for="userDescription">Nos conte um pouco sobre você!</label>
+            <textarea  name="userDescription" id="userDescription"></textarea>
+        </div>
+
+        <div>
+            <label for="userPlan">Plano</label>
+            <select name="userPassword" id="userPlan">
+                <option value="1">Padrão</option>
+                <option value="2">Premium</option>
+                <option value="1">Profissional</option>
+            </select>
+        </div>
+
+        <button type="submit">Cadastrar</button>
+        <button type="reset">Apagar</button>
+
+    </form>
+</body>
+</html>

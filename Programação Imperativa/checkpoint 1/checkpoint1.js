@@ -65,7 +65,9 @@ function microondas (comida, TempoDesejado){
 
 }
 
-microondas ("brigadeiro", 17);
-microondas ("brigadeiro", 6);
-microondas ("arroz", 17);
-microondas ("brigadeiro", 25);
+// microondas ("brigadeiro", 17);
+// microondas ("brigadeiro", 6);
+// microondas ("arroz", 17);
+// microondas ("brigadeiro", 25);
+
+microondas ("camarao", 38);
