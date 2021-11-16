@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&family=Yuji+Syuku&display=swap');
+
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+h1, p{
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Yuji Syuku', serif;
+
+}
+
+body {
+    background-image: url("orla-de-santos.jpg");
+    background-color: white;
+    /* height: 900px; */
+    /* background-position: center; */
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-attachment: fixed;
+   }
+
+.header{
+
+    font-family: 'Yuji Syuku', serif;
+    font-size: 54px;
+    font-style: oblique;
+    font-weight: bolder;
+    color: #0f0118;
+    /* width: 100%; */
+    /* padding: 10px 0 0; */
+    /* position: fixed; */
+    background-color: rgb(175, 20, 20);
+    text-align: center;
+    padding: 10px;
+    /* width: 120%; */
+}
+
+h1{
+    /* height: 750px; */
+    /* padding: 75px 100px 0; */
+    margin: 75px;
+    margin-top: 35px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 28px;
+    font_weight: bold;
+    color:rgb(11, 11, 73);
+    /* text-align: center */
+}
+
+p{
+    font-size: 22px;
+    font-family: 'Source Sans Pro', sans-serif;
+    /* padding: 200px 100px 0; */
+    margin: 75px;
+    /* margin-top: 50px; */
+    background-position: center;
+    color: white;
+    text-align: justify;
+    font-weight: normal;
+}
+
+/* iframe{
+    top: 0;
+    left: 0;
+} */
+
+h2{
+    /* height: 750px; */
+    /* padding: 100px 100px 0; */
+    /* margin-left: 75px;
+    margin-top: 35px; */
+    /* margin-bottom: 2500px; */
+    margin: 75px;
+    /* height: 3000px; */
+    /* width: */
+    /* length: */
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    /* position: fixed; */
+    color:rgb(11, 11, 73);
+}
+
+.youtube{
+    text-align: center;
+}
+
+.subtitulo{
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+ul{
+    font-size: 22px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 75px;
+    background-position: center;
+    color: white;
+    text-align: justify;
+    font-weight: normal;
+}
+
+.rodape img{
+    display: inline-block;
+    width: 100px;
+    margin: 0;
+}
+
+.rodape{
+    text-align: center;
+}
