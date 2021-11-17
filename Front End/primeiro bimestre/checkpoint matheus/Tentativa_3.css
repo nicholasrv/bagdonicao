@@ -1,0 +1,64 @@
+/* // @import url("https://www.dafont.com/pt/ninja-naruto.fonty=swap");
+// @import url("https://www.dafont.com/pt/ninja-naruto.font"); */
+
+@font-face {
+    font-family: 'njnaruto';
+    src: url('C:\Users\Nicholas\Documents\GitHub\bagdonicao\Front End\primeiro bimestre\checkpoint matheus\Assets');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://i.ibb.co/7bxjmzm/630463.jpg");
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-size: 2500px 940px;
+  background-color: #000;
+  background-attachment: fixed;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  font-family: "njnaruto";
+  background-color: #fff;
+  background-color: rgb(55, 184, 87);
+}
+
+main {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  padding: 50px 100px;
+  font-family: "njnaruto";
+}
+
+h1,
+h2 {
+  font-family: "njnaruto";
+}
+
+p {
+  font-family: "njnaruto";
+}
+
+iframe {
+  width: 1280px;
+  height: 720px;
+  margin: 50px;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 50px;
+  margin: 50px 10px;
+}
