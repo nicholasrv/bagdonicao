@@ -153,7 +153,7 @@ console.log(competicao(Participante_A, Participante_B, Participante_C));
 let alice = [23, 82, 46];
 let bob = [45, 8, 32];
 
-function econtrarVencedor(array1, array2) {
+function encontrarVencedor(array1, array2) {
     let comediante1 = 0;
     let comediante2 = 0;
     for (let i = 0; i < array1.length; i++) {
@@ -174,4 +174,4 @@ function econtrarVencedor(array1, array2) {
     }
 }
 
-econtrarVencedor(alice, bob);
+encontrarVencedor(alice, bob);
