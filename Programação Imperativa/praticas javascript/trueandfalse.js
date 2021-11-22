@@ -32,7 +32,7 @@ console.log(!(x===y)); // ----- retornará true, pois com o operador ! , eu nego
 
 let x = 10
 let y = "a"
-console.log(y==="b" || x >= 10) // ----- retornará true pois no operador OR (||) apenas um resultado verdadeiro já o suficiente para o retorno ser true.
+console.log(y ==="b" || x >= 10) // ----- retornará true pois no operador OR (||) apenas um resultado verdadeiro já o suficiente para o retorno ser true.
 //          é false      é true
 
 
@@ -50,3 +50,22 @@ console.log (!(x == "3" || x === y) && !(y !== 8 && x <= y))
 // Na segunda expressão, pelo operador ser AND e termos dois argumentos diferentes, a mesma retornará resultado FALSE.
 // Logo, teremos a seguinte expressao final: TRUE && FALSE.
 // Como o operador AND nao aceita dois resultados diferentes, será retornado FALSE.
+
+
+/*=======EXERCICIO 4======
+==========================*/
+
+let str = ""
+let msg = "haha!"
+let eBonito = "false"
+console.log (!((str || msg) && eBonito))
+// string vazia é sempre false
+// qualquer string com numero ou letra/palavra é true
+// obs.: strings "false" são verdadeiras.
+// Com essas regras, teremos os seguintes resultados iniciais: str = false; msg = true; eBonito = true.
+// Na primeira expressão interna, como a expressao é OR e um dos valores (msg) é verdadeiro, o retorno será true.
+// A variavel eBonito é verdadeira pois é uma string "false" e não tem valor lógico/de operação para O JS.
+// Logo, temos aqui duas expressões com valores true.
+// Tendo dois valores true e um operador AND (&&), o retorno será true.
+// Por outro lado, inicialmente antes de abrirmos as duas expressões, temos um "!", que inverte o resultado final.
+// Logo, nosso resultado final será false.
