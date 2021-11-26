@@ -23,20 +23,57 @@ OBJETO DO CLIENTE QUE CORRESPONDE A ESSE NOME INSERIDO.
 
 */
 
-function contaBancaria(numeroconta, tipoconta, saldoconta, titularconta){
-    this.numeroconta = numeroconta
-    this.tipoconta = tipoconta
-    this.saldoconta = saldoconta
-    this.titularconta = titularconta
+// function contaBancaria(numeroconta, tipoconta, saldoconta, titularconta){
+//     this.numeroconta = numeroconta
+//     this.tipoconta = tipoconta
+//     this.saldoconta = saldoconta
+//     this.titularconta = titularconta
+// }
+
+// let contabancaria = [];
+// contabancaria.push( new contaBancaria("456498723", "corrente", "126549", "Nicholas Ruas Viegas"));
+// contabancaria.push( new contaBancaria("156144984", "poupanca", "96485", "Guilherme Prado"));
+// contabancaria.push( new contaBancaria("654564898", "corrente", "57831", "Matheus dos Santos"));
+// contabancaria.push( new contaBancaria("231894985", "poupanca", "871945", "Paulo Freire"));
+
+// // let carroNovo = new Carro("Tesla", "x");
+// // let carroNovo1 = new Carro("Tesla", "3");
+
+// console.log(contabancaria);
+
+
+
+const dadosJson = require('./mesa15json');
+let listaUsuarios = []
+
+function contaBancaria(numeroConta, tipoConta, saldo, titularConta){
+    this.numeroConta = numeroConta
+    this.tipoConta = tipoConta
+    this.saldo = saldo
+    this.titularConta = titularConta
 }
 
-let contabancaria = [];
-contabancaria.push( new contaBancaria("456498723", "corrente", "126549", "Nicholas Ruas Viegas"));
-contabancaria.push( new contaBancaria("156144984", "poupanca", "96485", "Guilherme Prado"));
-contabancaria.push( new contaBancaria("654564898", "corrente", "57831", "Matheus dos Santos"));
-contabancaria.push( new contaBancaria("231894985", "poupanca", "871945", "Paulo Freire"));
+function adicionarConta(dadosJson, listaUsuarios){
+    for (let i = 0; i < dadosJson.length; i++) {
+    listaUsuarios.push(new contaBancaria(dadosJson[0].numero, dadosJson[0].tipo, dadosJson[0].saldo, dadosJson[0].titular))   
+    } 
+    return listaUsuarios
+}
 
-// let carroNovo = new Carro("Tesla", "x");
-// let carroNovo1 = new Carro("Tesla", "3");
+adicionarConta(dadosJson, listaUsuarios)
 
-console.log(contabancaria);
+const banco = {
+    clientes: listaUsuarios,
+    consultarCliente: function (titularConta) {
+        for (let i = 0; i < this.clientes.length; i++) {
+            if (titularConta === this.clientes[i].titularConta) {
+                return this.clientes[i];
+            }
+            else{
+                return 'Cliente não encontrado'
+            }
+       }
+    }
+}
+
+console.log(banco.consultarCliente('Abigael Natte'))
