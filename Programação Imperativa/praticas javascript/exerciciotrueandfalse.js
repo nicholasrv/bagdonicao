@@ -21,15 +21,15 @@ let linguagem = 'react'
 if(linguagem == 'Javascript'){
     console.log('Estou aprendendo' + ' ' + linguagem)
 }
-else if(linguagem == 'Python'){
-    console.log('Estou aprendendo' + ' ' + linguagem)
-}
-else if(linguagem == 'HTML/CSS'){
-    console.log('Estou aprendendo a criar sites em' + ' ' + linguagem)
-}
-else{
-    console.log('Aprenderei mais tarde')
-}
+// else if(linguagem == 'Python'){
+//     console.log('Estou aprendendo' + ' ' + linguagem)
+// }
+// else if(linguagem == 'HTML/CSS'){
+//     console.log('Estou aprendendo a criar sites em' + ' ' + linguagem)
+// }
+// else{
+//     console.log('Aprenderei mais tarde')
+// }
 
 
 /*=======EXERCICIO 3 - IF TERNARIO E SWITCH======
