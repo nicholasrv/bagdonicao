@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&family=Source+Sans+Pro:wght@300&family=Yuji+Syuku&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: lightblue;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    text-align: center;
+    font-size: 30pt;
+    padding: 62px;
+    height: 45px;
+    background-color: #3a3535;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(240, 39, 39);
+    font-weight: 800;
+    font-style:oblique;
+}
+
+form{
+    font-family: 'Roboto', sans-serif;
+    padding: 25px;
+    margin-top: 0pt;
+    
+}
+
+h1{
+    font-size: 36px;
+    font-weight: bolder;
+    color: #2d2574;
+}
+
+fieldset{
+    padding: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+
+legend{
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input.campos:hover{
+    width: 300px;
+    height: 30px;
+}
+
+button{
+    border-radius: 10px;
+    border-width: 3px;
+    /* transition: ease-in 3s; */
+    background-color: rgb(73, 63, 100);
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+button:hover{
+    border-radius: 10px;
+    border-color: rgb(73, 63, 100);
+}

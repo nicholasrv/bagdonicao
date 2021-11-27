@@ -1,0 +1,142 @@
+<!-- ###
+    #######
+    ############
+    ####################
+    Checkpoint 2: Bruno Barreto, Nicholas Ruas Viegas, Ruggiero Stello - Turma 8, CTD - Digital House
+    ####################
+    ############
+    #######
+    ###
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>São Paulo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header> Formulário de Cadastro - Cidade de São Paulo </header>
+
+    <form>
+        <h1>
+            Cadastro de usuário
+        </h1> 
+        <fieldset>
+
+            <legend>Dados pessoais </legend>
+
+            <div>
+                <label for="username">
+                    Nome de Usuário
+                </label><input class = campos type="text"  name ="username" id="username" placeholder="username">
+            </div>
+
+
+            <div>
+                <label for="email">
+                    Email
+                </label><input class = campos type="text"  name ="email" id="email" placeholder="email">
+            </div>
+
+
+            <div>
+                <label for="telefone">
+                    Telefone
+                </label><input class = campos type="number"  name ="telefone" id="telefone" placeholder="telefone">
+            </div>
+
+
+            <div>
+                <label for="datanascimento">
+                    Data de Nascimento
+                </label><input class = campos type="date"  name =" datanascimento" id="datanascimento" placeholder="datanascimento">
+            </div>
+    
+
+            <legend>Você é maior de idade?</legend>
+
+            <div>
+           
+                <input type="radio" name="maioridade" id="maior">
+                <label for="maior">Sim</label>
+            
+                <input type="radio" name="maioridade" id="menor">
+                <label for="menor">Não</label>
+
+            </div>
+
+
+
+        </fieldset>
+
+
+
+        <fieldset>
+
+
+            <h2>Qual é seu local preferido na cidade?</h2>
+
+
+          <div>
+
+            <input type="radio" name="pontoTuristico" id="masp">
+            <label for="masp">MASP</label>
+    
+          </div>
+
+
+           <div>
+
+            <input type="radio" name="pontoTuristico" id="ibirapuera">
+            <label for="ibirapuera">Parque Ibirapuera</label>
+
+           </div>     
+
+
+           <div>
+
+            <input type="radio" name="pontoTuristico" id="paulista">
+            <label for="paulista">Avenida paulista</label>
+
+           </div>
+
+
+        </fieldset>
+
+
+
+        <fieldset>
+
+            <div>
+
+                <h2>Qual é seu interesse na cidade?</h2>
+
+                <br>
+        
+                    <input type="checkbox" name = "interesse" id="turista">
+                    <label for="turista">Turista</label>
+        
+                    <input type="checkbox" name = "interesse" id="residente">
+                    <label for="residente">Residente</label>
+
+                    <input type="checkbox" name = "interesse" id="estudante">
+                    <label for="estudante">Estudante</label>
+        
+            </div>    
+        
+    
+        </fieldset>
+
+
+        <button type="reset">Resetar</button>
+        <button type="submit">Cadastrar</button>
+
+    </form>
+    
+</body>
+</html>
