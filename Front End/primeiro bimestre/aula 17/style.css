@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-title{
+    
+    color: lightpink;
+
+}
+
+@media (max-width: 768px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas:
+        'main-header'
+        'main-content'
+        'main-aside'
+        ;
+
+    }
+
+    .content{
+
+    }
+
+
+    aside {
+
+    }
+
+        .main-title{
+
+            color: lightgreen;
+        }
+        
+        
+        h2{
+            font-size: 60px
+        }
+
+}
