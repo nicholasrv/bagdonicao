@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  background-color: red;
+  height: 300px;
+  padding: 14px;
+}
+
+.main-content {
+  height: 200px;
+  background-color: aqua;
+  padding: 20px;
+}
+
+.main-content img {
+  height: 300px;
+  width: 25%;
+  padding: 22px;
+}
+
+.main-content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  height: 65px;
+}
+
+.main-content ul li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+}
+/*# sourceMappingURL=style.css.map */

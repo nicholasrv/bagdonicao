@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: red;
+    height: 300px;
+    padding: 14px;
+}
+
+.main-content{
+    height: 200px;
+    background-color: aqua;
+    padding: 20px;
+
+    img{
+
+        height: 300px;
+        width: 25%;
+        padding: 22px;
+
+    }
+
+    ul{
+        display:flex;
+        padding: 20px;
+        height: 65px;
+    
+
+        li{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 600;
+        }
+
+    }
+
+
+}
+
+// .main-content img{
+//     padding: 16px;
+//     flex: content;
+//     text-align: center;
+//     height: 600px;
+    
+// }
