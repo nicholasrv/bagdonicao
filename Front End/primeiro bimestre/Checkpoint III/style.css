@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-header{
+    /* gap: 30px; */
+    /* list-style: none; */
+    background-color: #f0e9d2e7;
+    width: 100%;
+    /* padding: 24px 0; */
+    position: fixed;
+   
+}
+
+.logoheader{
+    padding: 20px;
+    height: 100px;
+    width: auto;
+}
+
+/* .main-header nav {
+    height: 40px;
+    margin: 0 auto;
+    margin-right: 20px;
+}
+
+header ul{
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    padding-top: 40px;
+    align-content: stretch;
+} */
+
+

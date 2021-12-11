@@ -111,8 +111,7 @@ const arquivos = [
         "altura": 1.80
     }
   ]
-
-
+  
 console.log(maiorAltura(arquivos));
 console.log(menorAltura(arquivos));
 console.log(mediaMulheres(arquivos));
