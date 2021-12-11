@@ -11,7 +11,7 @@
     width: 100%;
     /* padding: 24px 0; */
     position: fixed;
-   
+
 }
 
 .logoheader{
@@ -34,4 +34,9 @@ header ul{
     align-content: stretch;
 } */
 
+.bgnetflix{
+    background-size: 100%;
+    background-position: center;
+    
+}
 
