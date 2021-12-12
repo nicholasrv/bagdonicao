@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@600&family=Cabin:wght@500&family=Crete+Round&family=Source+Sans+3&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@600&family=Cabin:wght@500&family=Crete+Round&display=swap');
+html{
+    scroll-behavior: smooth;
 
+}
 
 .main-header{
     /* gap: 30px; */
@@ -15,10 +19,12 @@
     /* padding: 24px 0; */
     position: fixed;
     z-index: 2;
-    margin-right: 200px;
-    font-family: 'Bitter';
-
+    /* margin-right: 200px; */
+    font-family: 'Source Sans 3', sans-serif;
+    color:rgb(10, 10, 10);
+    font-size: 20px;
 }
+
 
 .logoheader{
     padding: 20px;
@@ -48,17 +54,39 @@ header ul{
     background-position: center;
     background-attachment: fixed;
     text-align: center;
+    border-radius: 15px;
+
   }
 
+  .container h1{
+      text-align: center;
+      padding: 20px;
+      /* margin-bottom: 20px; */
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: bolder;
+    }
+
+    .titulo{
+        font-style: normal;
+        font-size: 50px;
+        color: rgb(46, 41, 46);
+    }
+
   .card{
-      display: flex;
       margin-bottom: 20px;
-      font-family: "Bitter";
-      font-size: 32px;
-      font-weight: bold;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 16px;
+      border-radius: 10px;
+      border-style: groove;
+      background-color: #f5f1e2e7;
+      color:rgb(10, 10, 10)
   }
 
   .card img{
       height: 581px;
       object-fit: cover;
+  }
+
+  .card .btn{
+      width: 100%;
   }
