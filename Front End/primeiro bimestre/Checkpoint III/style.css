@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@600&family=Cabin:wght@500&family=Crete+Round&display=swap');
+
+
 .main-header{
     /* gap: 30px; */
     /* list-style: none; */
@@ -11,6 +14,9 @@
     width: 100%;
     /* padding: 24px 0; */
     position: fixed;
+    z-index: 2;
+    margin-right: 200px;
+    font-family: 'Bitter';
 
 }
 
@@ -34,9 +40,25 @@ header ul{
     align-content: stretch;
 } */
 
-.bgnetflix{
-    background-size: 100%;
+  .banner {
+    height: 100vh;
+    background-image: url("imagens/82317.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
-    
-}
+    background-attachment: fixed;
+    text-align: center;
+  }
 
+  .card{
+      display: flex;
+      margin-bottom: 20px;
+      font-family: "Bitter";
+      font-size: 32px;
+      font-weight: bold;
+  }
+
+  .card img{
+      height: 581px;
+      object-fit: cover;
+  }
