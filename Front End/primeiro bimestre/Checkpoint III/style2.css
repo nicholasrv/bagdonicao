@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@600&family=Cabin:wght@500&family=Crete+Round&family=Source+Sans+3&display=swap');
+
 
 *{
     padding: 0;
@@ -67,31 +67,32 @@ html{
     padding: 20px;
     height: 100px;
     width: auto;
-    
 }
 
 .modal-header{
-  display: block;
+display: block;
+}
+
+.dh-login
+  {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    
   }
-  
-  .dh-login
-    {
-      display: block;
-      margin: 0 auto;
-      width: 75%;
-      height: auto;
-      text-align: center;
-      margin-bottom: 30px;
-      
-    }
-  
-    .form-control {
-      text-align: center;
-      margin: 0 auto;
-      width: 100%;
-      display: flex !important;
-      line-height: 150%;
-    }
+
+  .form-control {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    display: flex !important;
+    line-height: 150%;
+  }
+
+
 /* .main-header nav {
     height: 40px;
     margin: 0 auto;
@@ -189,64 +190,3 @@ header ul{
   footer .icon-social img:hover {
     transform: scaleX(1.2)
   }
-  
-  .modal-dialog{
-    background-color: white;
-    border-radius: 20px;
-    margin-top: 100Px;
-    border-inline-color: gray;
-  }
-  
-
-/*  ======================FILMES================= */
-
-
-a:link {
-  color: black;
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  width: 2000px;
-  height: auto;
-}
-
-.title-movie {
-  font-weight: bold;
-
-}
-
-.logo {
-width: 50px;
-height: auto;
-}
-
-#pic {
-background-image: url(imagens/imdb-logo.png);
-display: block;
-/* margin: 0 auto; */
-text-indent: -9999px;
-width: 50px;
-height: auto;
-
-}
-
-.checked {
-  color: orange;
-}
-
-.director {
-  text-align: center;
- }
-
-.actors {
-  text-align: center;
-}
-
-.trailer {
-  width: 1080px;
-  height: 720px; 
-  display: block;
-  margin: auto;
-}

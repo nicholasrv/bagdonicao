@@ -1,0 +1,189 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+  <title>DH Flix - Tempo</title>
+</head>
+
+<body>
+
+  <header class="main-header">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">
+          <img class="logoheader" src="imagens/02_DH.png" alt="">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Filmes</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#dados">Sobre nós</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" data-bs-target="#myModal" data-bs-toggle="modal" href="#">Login</a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  
+
+  <main>
+
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            
+            <div class="text-center mt-5">
+              <form style="max-width: 350px;margin:auto;">
+                <img class="dh-login" src="imagens/dh-coding.png" height="72" alt="DH Coding Logo">
+                <h1 class="h3 mb-3 
+                  font-weight-normal">Login</h1>
+                <label for="emailAdress" class="sr-only">
+                  <!-- Email adress --></label>
+                <input type="email" id="emailAdress" class="form-control" placeholder="Email do Usuário" required autofocus>
+                <label for="password" class="sr-only">
+                  <!-- Password --></label>
+                <input type="password" id="password" placeholder="Senha" class="form-control">
+                <div class="checkbox mt-3">
+                  <label for="">
+                    <input type="checkbox" value="remember-me">Lembre-se de mim
+                  </label>
+                </div>
+                <div class="mt-3">
+                  <button class="btn btn-lg btn-primary btn-block">Entrar</button>
+                  
+                </div>
+          
+              </form>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div> 
+      
+<!-- ================================== -->
+
+<section class="movie-video">
+    <img src="imagens/tempo-longo.jpg" alt="Tempo">
+</section>
+
+<h1 class="title-movie">Tempo
+  <a href="https://www.imdb.com/title/tt2382320/"><img src="imagens/imdb-logo.png" class="logo"> </a>
+</h1>
+
+<section class="about-movie">
+    
+    <div class="movie-rate">
+
+
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+    </div>
+
+    <p>Uma família decide se divertir em uma praia e se vê envolvida em um mistério sinistro. O tempo parece passar de forma diferente no lugar, fazendo com que eles envelheçam anos em alguns minutos.</p>
+
+    <div class="director">
+        <h2>Diretor</h2>
+        <p> <a href="https://www.imdb.com/name/nm0796117/">M. Night Shyamalan</a> </p>
+    </div>
+
+    <div class="actors">
+        <h2>Elenco Principal</h2>
+        <p> <a href="https://www.imdb.com/name/nm0305558/">Gael García Bernal</a>, <a href="https://www.imdb.com/name/nm3043279/">Vicky Krieps</a>, <a href="https://www.imdb.com/name/nm0001722/">Rufus Sewell</a></p>
+    </div>
+
+    <iframe class="trailer" 
+        src="https://www.youtube.com/embed/zxnVGnQKM4E">
+    </iframe>
+
+</section>
+
+
+
+
+<!-- =================================== -->
+<footer class="mt-5" id="dados">
+    <div class="container px-4 py-5" id="featured-3">
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
+        <div id="team" class="feature col text-white pb-4">
+          <div class="feature-icon mb-2">
+            <a href="https://github.com/nicholasrv/bagdonicao/tree/main/Front%20End/primeiro%20bimestre/Checkpoint%20III"> <img src="imagens/03_github.png" alt=""></a> 
+          </div>
+          <h2>Nicholas Ruas Viegas</h2>
+          <p>Responsável pelo desenvolvimento da Home.</p>
+          
+        </div>
+
+        <div class="feature col text-white pb-4">
+          <div class="feature-icon mb-2">
+           <a href="https://github.com/BrnBarreto/CTD/tree/main/front_end/1-bi"> <img src="imagens/03_github.png" alt=""></a> 
+          </div>
+          <h2>Bruno Barreto</h2>
+          <p>Responsável pelo modal Login e Responsividade.</p>
+          
+        </div>
+        
+        <div class="feature col text-white pb-4">
+          <div class="feature-icon mb-2">
+            <a href="https://github.com/rsstello/FrontEnd-Check03/blob/main/style.css"><img src="imagens/03_github.png" alt=""></a> 
+          </div>
+          <h2>Ruggiero Stello</h2>
+          <p>Responsável pelas páginas de descrição dos filmes.</p>
+          
+        </div>
+        <div>
+          <p></p>
+        </div>
+        <div class="footer-text py-5">   
+                 
+          <p>Checkpoint 3 desenvolvido em 2021</p>
+          
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

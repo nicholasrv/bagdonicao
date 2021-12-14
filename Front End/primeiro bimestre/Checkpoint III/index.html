@@ -1,0 +1,255 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  <title>DH Flix </title>
+</head>
+
+<body>
+
+  <header class="main-header">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">
+          <img class="logoheader" src="imagens/02_DH.png" alt="">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#catalogo">Filmes</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#dados">Sobre nós</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" data-bs-target="#myModal" data-bs-toggle="modal" href="#">Login</a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  
+
+  <main>
+
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            
+            <div class="text-center mt-5">
+              <form style="max-width: 350px;margin:auto;">
+                <img class="dh-login" src="imagens/dh-coding.png" height="72" alt="DH Coding Logo">
+                <h1 class="h3 mb-3 
+                  font-weight-normal">Login</h1>
+                <label for="emailAdress" class="sr-only">
+                  <!-- Email adress --></label>
+                <input type="email" id="emailAdress" class="form-control" placeholder="Email do Usuário" required autofocus>
+                <label for="password" class="sr-only">
+                  <!-- Password --></label>
+                <input type="password" id="password" placeholder="Senha" class="form-control">
+                <div class="checkbox mt-3">
+                  <label for="">
+                    <input type="checkbox" value="remember-me">Lembre-se de mim
+                  </label>
+                </div>
+                <div class="mt-3">
+                  <button class="btn btn-lg btn-primary btn-block">Entrar</button>
+                  
+                </div>
+          
+              </form>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div> 
+      <section class="banner">
+
+        <div class="banner-content">
+          <div class="banner-text">
+            
+            
+            <div>
+              <h1>DH FLIX</h1>
+            </div>
+            <p>Filmes, séries e muito mais. Sem limites.</p>
+            <div class="banner-buttons col-4">
+              <button type="button" class="w-100 btn btn-outline-success btn-lg  mt-4 ">Explorar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+  </section>
+     
+    <div class="container">
+
+      <h1 class="titulo">Filmes</h1>
+
+      <section class="row" id="catalogo">
+
+        <div class="col-md-4 d-flex align-items-stretch">
+
+
+          <div class="card">
+            <img src="imagens/01_007.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h1 class="card-text">007 - Sem Tempo Para Morrer</h1>
+              <p>Após James Bond (Daniel Craig) deixar o MI6 e mudar-se para a Jamaica, Felix Leiter, amigo de Bond e agente da CIA, pede sua ajuda na busca por um cientista desaparecido. Ao perceber que o cientista foi raptado, o ex-agente 007 percebe que a simples busca é na verdade uma corrida para salvar o mundo.</p>
+              
+            </div>
+            <a href="filme007.html" class="btn btn-success">Abrir</a>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 d-flex align-items-stretch">
+
+          <div class="card">
+            <img src="imagens/01_candyman.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h1 class="card-text">A Lenda de Candyman
+              </h1>
+              <p>Um jovem artista cria uma exposição sobre Candyman, uma criatura maligna que, segundo as lendas, pode ser invocada diante de um espelho. Aos poucos, o fascínio do rapaz pelo monstro o joga em uma trama de mistérios, sangue e morte.</p>
+              
+            </div>
+            <a href="filmeCandyMan.html" class="btn btn-success">Abrir</a>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 d-flex align-items-stretch">
+
+          <div class="card">
+            <img src="imagens/01_dune.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h1 class="card-text">Duna</h1>
+              <p>Paul Atreides é um jovem brilhante, dono de um destino além de sua compreensão. Ele deve viajar para o planeta mais perigoso do universo para garantir o futuro de seu povo.
+              </p>
+              
+            </div>
+            <a href="filmeDune.html" class="btn btn-success">Abrir</a>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 d-flex align-items-stretch">
+
+          <div class="card">
+            <img src="imagens/01_raya-dragao.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h1 class="card-text">Raya e o Último Dragão</h1>
+              <p>Há muito tempo, no mundo de fantasia de Kumandra, humanos e dragões viviam juntos em harmonia. Mas quando uma força maligna ameaçou a terra, os dragões se sacrificaram para salvar a humanidade. Agora, 500 anos depois, o mesmo mal voltou e cabe a uma guerreira solitária, Raya, rastrear o lendário último dragão para restaurar a terra despedaçada e seu povo dividido.</p>
+              
+            </div>
+            <a href="filmeRaya.html" class="btn btn-success">Abrir</a>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 d-flex align-items-stretch">
+
+          <div class="card">
+            <img src="imagens/01_shang.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h1 class="card-text">Shang-Chi</h1>
+              <p>Shang-Chi é o filho do líder de uma organização criminosa poderosa. O rapaz foi criado desde criança para ser um guerreiro, mas decidiu abandonar esse caminho e fugiu para viver uma vida pacífica. Porém, tudo isso muda quando ele é atacado por um grupo de assassinos e se vê forçado a enfrentar seu passado.</p>
+              
+            </div>
+            <a href="filmeChangChi.html" class="btn btn-success">Abrir</a>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 d-flex align-items-stretch">
+
+          <div class="card">
+            <img src="imagens/01_tempo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h1 class="card-text">Tempo</h1>
+              <p> Uma família decide se divertir em uma praia e se vê envolvida em um mistério sinistro. O tempo parece passar de forma diferente no lugar, fazendo com que eles envelheçam anos em alguns minutos. </p>
+             
+            </div>
+            <a href="filmeTempo.html" class="btn btn-success">Abrir</a>
+          </div>
+        </div>
+        
+      </section>  
+
+  </main>
+  <footer class="mt-5" id="dados">
+    <div class="container px-4 py-5" id="featured-3">
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
+        <div id="team" class="feature col text-white pb-4">
+          <div class="feature-icon mb-2">
+            <a href="https://github.com/nicholasrv/bagdonicao/tree/main/Front%20End/primeiro%20bimestre/Checkpoint%20III"> <img src="imagens/03_github.png" alt=""></a> 
+          </div>
+          <h2>Nicholas Ruas Viegas</h2>
+          <p>Responsável pelo desenvolvimento da Home.</p>
+          
+        </div>
+
+        <div class="feature col text-white pb-4">
+          <div class="feature-icon mb-2">
+           <a href="https://github.com/BrnBarreto"> <img src="imagens/03_github.png" alt=""></a> 
+          </div>
+          <h2>Bruno Barreto</h2>
+          <p>Responsável pelo modal Login e Responsividade.</p>
+          
+        </div>
+        
+        <div class="feature col text-white pb-4">
+          <div class="feature-icon mb-2">
+            <a href="https://github.com/rsstello/FrontEnd-Check03/blob/main/style.css"><img src="imagens/03_github.png" alt=""></a> 
+          </div>
+          <h2>Ruggiero Stello</h2>
+          <p>Responsável pelas páginas de descrição dos filmes.</p>
+          
+        </div>
+        <div>
+          <p></p>
+        </div>
+        <div class="footer-text py-5">   
+                 
+          <p>Checkpoint 3 desenvolvido em 2021</p>
+          
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
