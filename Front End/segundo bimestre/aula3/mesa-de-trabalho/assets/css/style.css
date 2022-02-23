@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.tabuleiro {
+    background-color: green;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 640px;
+    width: 640px;
+    padding: 10px;
+}
+
+.coordenada {
+    align-items: center;
+    background-color: lawngreen;
+    border-radius: 10px;
+    color: darkgreen;
+    display: flex;
+    font-family: Arial Black, Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    height: 200px;
+    justify-content: center;
+    width: 200px;
+}
