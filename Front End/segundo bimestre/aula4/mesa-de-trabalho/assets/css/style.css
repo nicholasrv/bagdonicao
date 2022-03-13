@@ -1,0 +1,53 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial Black, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+section {
+    background-color: lightgray;
+    border-radius: 25px;
+    padding: 25px;
+    margin: 0 auto;
+    width: 458px;
+}
+
+.lista {
+    padding: 0;
+}
+
+.lista__item {
+    background-color: gray;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    list-style: none;
+    padding: 25px 15px;
+    margin: 10px 0;
+}
+
+.lista__item:hover {
+    background-color: lightgray;
+    transition: .5s all;
+    transform: scale(1.05);
+
+}
+
+/*
+    Classes que serão utilizadas no JavaScript
+    para adicionar interação com conteúdo.
+*/
+
+.removido {
+    background-color: red;
+}
+
+.selecionado {
+    background-color: blue;
+}
