@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    background-color: black;
+    display: flex;
+    font-family: Arial Black, Arial, Helvetica, sans-serif;
+    height: 100vh;
+    justify-content: center;
+}
+
+.lista {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+[class*="lista__"] {
+    margin: 5px 0;
+}
+
+.lista__item {
+    background-color: orangered;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 25px;
+}
