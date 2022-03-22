@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Aula 09: Primeira entrega</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="l-app">
+
+        <!-- 
+
+            1. Esta sessão deverá ser apresentada
+            sempre que houver o click no botão MENU:
+
+            <button class="l-sidebar__btn"type="button">Menu</button>
+
+        -->
+        <div class="l-sidebar" id="sidebarMenu">
+            <h1 class="l-logo">seu nome</h1>
+            <nav class="c-sidebar">
+                <a class="c-nav__item" href="#sobre-mim">sobre mim</a>
+                <a class="c-nav__item" href="#contatos">contatos</a>
+            </nav>
+        </div>
+
+        <!--
+
+            1.1. Quando houver o click do usuário,
+            a sidebar deverá ser apresentada.
+
+            <div class="l-sidebar">
+                ...
+            </div>
+
+        -->
+        <button class="l-sidebar__btn"type="button" id="btnAbrirMenu">Menu</button>
+
+        <!-- 
+
+            2. O usuário poderá usar o teclado para abrir ou fechar
+            a sidebar. No caso, as tecla Space.
+
+            3. O usuário poderá usar o mouse para abrir ou fechar
+            a sidebar. No caso, um duplo click em qualquer local
+            do site irá abrir ou fechar a sidebar.
+
+        -->
+
+        <div class="l-content">
+
+            <!-- Sessão Principal -->
+            <div class="l-page bg__profile">
+                <main>
+                    <h1 class="title">Olá, me chamo fulano</h1>
+                    <p class="description">Seja bem vindo ao meu currículo on-line.</p>
+                    
+                    <nav class="c-nav u-my-3">
+                        <a class="c-nav__item" href="">Github</a>
+                        <a class="c-nav__item" href="">Linkedin</a>
+                    </nav>
+
+                    <a class="c-btn u-my-3" href="#sobre-mim">sobre mim</a>
+                    <div class="tooltip">Bem-vindo!</div>
+                </main>
+            </div>
+
+            <!-- Sessão Sobre mim -->
+            <div class="l-page" id="sobre-mim">
+                <article>
+                    <h1 class="title">Sobre mim</h1>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. Paisis, filhis, espiritis santis.Per aumento de cachacis, eu reclamis.Casamentiss faiz malandris se pirulitá.Copo furadis é disculpa de bebadis, arcu quam euismod magna.</p>
+                    <p>Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl.Leite de capivaris, leite de mula manquis sem cabeça. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.Manduma pindureta quium dia nois paga.</p>
+                    <p>Interagi no mé, cursus quis, vehicula ac nisi.Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo!Sapien in monti palavris qui num significa nadis i pareci latim.</p>
+                    <br>
+                    <a class="c-btn u-my-3" href="#contatos">Contatos</a>
+                    <div class="tooltip">Sobre mim</div>
+                </article>
+            </div>
+
+            <!-- Sessão Contatos-->
+            <div class="l-page" id="contatos">
+                <section>
+                    <h1 class="title">Posso te ajudar?</h1>
+                    
+                    <nav class="c-nav">
+                        <a class="c-nav__item" href="">Github</a>
+                        <a class="c-nav__item" href="">Linkedin</a>
+                        <a class="c-nav__item" href="tel:+5521972190000">Telefone</a>
+                    </nav>
+                    <div class="tooltip">Contatos</div>
+                </section>
+
+                <footer class="u-my-3">
+                    <span>Todos os direitos reservados fulano.</span>
+                </footer>
+                
+            </div>
+
+        </div>
+    </div>
+
+    <!--
+
+        4. Um boxe de texto irá acompanhar o cursor do mouse.
+        4.1. O texto deverá mudar quando o cursor do mouse sobrepor 
+        qualquer uma das sessão do site:
+         - Receberá o texto Bem vindo
+         - Receberá o texto Sobre mim
+         - Receberá o texto Contatos
+
+        5. Corrija o erro presente no console do DevTools.
+
+    -->
+    
+    <script type="text/javascript" src="./app.js" defer></script>
+
+</body>
+</html>

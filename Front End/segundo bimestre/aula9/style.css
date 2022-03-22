@@ -1,0 +1,179 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(22, 22, 22);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+ 
+/*
+    Layout(s)
+*/
+
+.l-app {
+    height: 100vh;
+    width: 100vw;
+}
+
+.l-sidebar {
+    background-color: black;
+    height: 100vh;
+    padding: 100px 25px 0;
+    position: fixed;
+    min-width: 250px;
+    top: 0;
+    left: 0;
+    transform: translateX(-250px);
+    transition: .3s ease-in-out;
+    width: 250px;
+    z-index: 1;
+}
+
+.l-sidebar::after {
+    color: white;
+    content: "fechar";
+    font-family: Arial Black, Arial, sans-serif;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.l-sidebar__btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    position: fixed;
+    margin: 50px;
+}
+
+.l-sidebar--open {
+    transition: all .5s;
+    transform: translateX(0);
+}
+
+.l-sidebar--close {
+    transition: all .5s;
+    transform: translateX(-250px);
+}
+
+
+.l-logo {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 75px;
+}
+
+.l-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding: 50px;
+    width: 100%;
+}
+
+.bg__profile {
+    background-image: url("./images/profile.webp");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+/*
+    Componente(s)
+*/
+
+.c-sidebar {
+    display: flex;
+    font-family: Arial Black, Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.c-nav {
+    display: flex;
+    font-family: Arial Black, Arial, Helvetica, sans-serif;
+    gap: 25px;
+}
+
+.c-nav__item {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.c-btn {
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: Arial Black, Arial, sans-serif;
+    font-size: 24px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+
+/* Texto */
+.title {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.description {
+    color: white;
+    font-size: 1.75rem;
+}
+
+/* Utilitários */
+
+.u-mx-1 {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.u-mx-2 {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.u-mx-3 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.u-my-1 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.u-my-2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.u-my-3 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.l-page:hover .tooltip{
+    display:block;
+}
+
+.tooltip{
+    background-color: #efefef;
+    color: #323030;
+    padding: 2px 10px;
+    width: fit-content;
+    display: none;
+    position:absolute;
+    z-index: 999;
+    margin-left: 20px;
+}
