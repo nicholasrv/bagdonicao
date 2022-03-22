@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Aula 10: Formulários I</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <article>
+        <h1 class="h1">Capturando e manipulando dados</h1>
+    </article>
+
+    <form id="formularioDeCadastro">
+        <!-- 
+            O elemento <label> é uma tag semântica,
+            adiciona um rótulo a cada <input> criado.
+
+            Utilizei um class sr-only para ocultar o rótulo
+            visualmente da interface do programa.
+        -->
+        <label class="sr-only" for="telefone">Telefone</label>
+        <input class="c-form__campo u-my" name="telefone" type="tel" placeholder="Digite seu telefone" required>
+        <button class="c-form__botao u-my" type="submit">Cadastrar telefone</button>
+    </form>
+    
+    <script type="text/javascript" src="./app.js"></script>
+
+</body>
+</html>

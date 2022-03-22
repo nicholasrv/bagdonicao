@@ -1,0 +1,44 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.h1 {
+    font-family: Arial Black, Arial, sans-serif;
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0,0,0,0);
+    height: 1px;
+    position: absolute;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    width: 1px;
+}
+
+[class ^= 'c-form__'] {
+    display: block;
+    width: 100%
+}
+
+.c-form__campo {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 10px 5px;
+}
+
+.c-form__botao {
+    background-color: greenyellow;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-size: 1.2rem;
+    padding: 10px 5px;
+}
+
+.u-my {
+    margin: 10px 0;
+}

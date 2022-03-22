@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa de trabalho</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    
+
+    <div class="l-app">
+        <article>
+            <h1 class="h1">Adicionar novo item</h1>
+            <form id="formularioDeCadastro">
+                <!-- 
+                    O elemento <label> é uma tag semântica,
+                    adiciona um rótulo a cada <input> criado.
+
+                    Utilizei um class sr-only para ocultar o rótulo
+                    visualmente da interface do programa.
+                -->
+                <label class="sr-only" for="item">Nome o item</label>
+                <input class="c-form__campo u-my" name="item" type="text" placeholder="Digite um novo item" required>
+                <button class="c-form__botao u-my" type="submit">Adicionar item</button>
+            </form>
+        </article>
+        <aside>
+            <h2 class="h1">Lista de itens cadastrados</h2>
+            <ul class="c-lista">
+                <!-- 
+                    Adicionei um emoji compatível com as principais
+                    versões dos navegadores Chrome e Mozilla.
+
+                    Link da referência: https://www.science.co.il/internet/html/Smileys.php
+                -->
+                <li class="c-lista__item">&#128533; Não há itens cadastrados</li>
+            </ul>
+        </aside>
+    </div>
+    
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+
+</body>
+</html>
