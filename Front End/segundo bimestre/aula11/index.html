@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Aula 11: Formulários II</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <article>
+        <h1 class="h1">Cadastro</h1>
+
+        <form name="formulario">
+            <!-- 
+                O elemento <label> é uma tag semântica,
+                adiciona um rótulo a cada <input> criado.
+    
+                Utilizei um class sr-only para ocultar o rótulo
+                visualmente da interface do programa.
+            -->
+            <div class="u-my">
+                <label class="sr-only" for="nome">Nome</label>
+                <input class="c-form__campo" name="nome" id="nome" type="text" placeholder="Digite um nome">
+            </div>
+            <ul class="c-alerta">
+                
+            </ul>
+            <button class="c-form__botao u-my" type="submit">Cadastrar</button>
+        </form>
+    </article>
+    
+    <script type="text/javascript" src="./app.js"></script>
+
+</body>
+</html>
