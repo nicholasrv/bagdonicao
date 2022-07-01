@@ -1,4 +1,4 @@
-package Aula19
+package Aula19;
 
 public class ProdutoFactory {
 

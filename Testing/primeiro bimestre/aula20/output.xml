@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220629 23:08:44.622" rpa="false" schemaversion="3">
+<suite id="s1" name="Mesa20" source="C:\Users\Nicholas\Documents\GitHub\bagdonicao\Testing\primeiro bimestre\aula20\mesa20.robot">
+<test id="s1-t1" name="Abrir o site da loja Sauce demo" line="6">
+<kw name="Abrir o site da loja Sauce demo" library="mesa20">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220629 23:08:44.798" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com'.</msg>
+<status status="PASS" starttime="20220629 23:08:44.797" endtime="20220629 23:08:46.426"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220629 23:08:46.426" endtime="20220629 23:08:46.544"/>
+</kw>
+<status status="PASS" starttime="20220629 23:08:44.797" endtime="20220629 23:08:46.544"/>
+</kw>
+<status status="PASS" starttime="20220629 23:08:44.796" endtime="20220629 23:08:46.544"/>
+</test>
+<status status="PASS" starttime="20220629 23:08:44.623" endtime="20220629 23:08:46.546"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Mesa20">Mesa20</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
