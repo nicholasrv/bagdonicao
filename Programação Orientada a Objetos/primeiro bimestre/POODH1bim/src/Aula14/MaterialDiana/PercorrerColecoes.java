@@ -34,7 +34,7 @@ public class PercorrerColecoes {
 
 
         System.out.println("------Percorrendo com while---------");
-        //Muito útil quando necessário para o ciclo antes de acessar todos os elementos
+        //Muito útil quando necessário parar o ciclo antes de acessar todos os elementos
 
         //no exemplo:
         //nomes.add("Juan"); = get(0)

@@ -22,7 +22,7 @@ public class Equipe {
 
     ///methods
     public void addJogador (Jogador jogador){
-        listaJogadores. add(jogador); // adiciona na lista de arrays
+        listaJogadores.add(jogador); // adiciona na lista de arrays
     }
 
     public void mostrarJogadoresTitulares(){
