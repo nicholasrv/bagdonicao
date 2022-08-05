@@ -1,0 +1,71 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.h1 {
+    font-family: Arial Black, Arial, sans-serif;
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0,0,0,0);
+    height: 1px;
+    position: absolute;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    width: 1px;
+}
+
+[class ^= 'c-form__'] {
+    display: block;
+    width: 100%
+}
+
+.c-form__campo {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 10px 5px;
+}
+
+.c-form__botao {
+    background-color: orangered;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 5px;
+}
+
+.c-lista {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    list-style: none;
+    padding: 0;
+}
+
+.c-lista__item {
+    background-color: rgb(226, 226, 226);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.l-app {
+    display: grid;
+    gap: 25px;
+    margin: 0 auto;
+    max-width: 480px;
+}
+
+.u-my {
+    margin: 10px 0;
+}
+
+@media (min-width: 780px) {
+    .l-app {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 960px;
+    }
+}

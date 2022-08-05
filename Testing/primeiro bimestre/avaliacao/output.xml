@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220706 20:39:58.936" rpa="false" schemaversion="3">
+<suite id="s1" name="Chico" source="C:\Users\Nicholas\Documents\GitHub\bagdonicao\Testing\primeiro bimestre\avaliacao\chico.robot">
+<test id="s1-t1" name="Test Setup" line="8">
+<kw name="Abrir o site da loja Chico Rei" library="chico">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220706 20:39:59.118" level="INFO">Opening browser 'Chrome' to base url 'https://chicorei.com/'.</msg>
+<status status="PASS" starttime="20220706 20:39:59.117" endtime="20220706 20:40:02.227"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220706 20:40:02.227" endtime="20220706 20:40:02.347"/>
+</kw>
+<status status="PASS" starttime="20220706 20:39:59.117" endtime="20220706 20:40:02.347"/>
+</kw>
+<status status="PASS" starttime="20220706 20:39:59.116" endtime="20220706 20:40:02.348"/>
+</test>
+<test id="s1-t2" name="Processo de compra de uma camiseta &quot;Vira lata caramelo&quot; no site do Chico Rei" line="11">
+<kw name="Aceitar Cookies" library="chico">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${COOKIE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:40:02.350" level="INFO">Clicking element 'id=confirmPolicyButton'.</msg>
+<status status="PASS" starttime="20220706 20:40:02.349" endtime="20220706 20:40:02.390"/>
+</kw>
+<status status="PASS" starttime="20220706 20:40:02.349" endtime="20220706 20:40:02.390"/>
+</kw>
+<kw name="Pesquisar por &quot;Vira lata caramelo&quot; e selecionar a primeira opção da lista de resultados" library="chico">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${BARRA-PESQUISA}</arg>
+<arg>${CARAMELO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220706 20:40:02.391" level="INFO">Typing text 'Vira lata caramelo' into text field 'id=header-search-input-desktop'.</msg>
+<status status="PASS" starttime="20220706 20:40:02.391" endtime="20220706 20:40:02.494"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:40:04.497" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220706 20:40:02.494" endtime="20220706 20:40:04.497"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CAMISA-CARAMELO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:40:04.497" level="INFO">Clicking element 'xpath=//div[@id='header-search-desktop']/form/div/div/div/div/div/div[2]/div'.</msg>
+<status status="PASS" starttime="20220706 20:40:04.497" endtime="20220706 20:40:05.408"/>
+</kw>
+<status status="PASS" starttime="20220706 20:40:02.391" endtime="20220706 20:40:05.408"/>
+</kw>
+<kw name="Validar o valor de R$ 69,90" library="chico">
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${ID-CARAMELO69}</arg>
+<arg>${VALOR-CARAMELO}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220706 20:40:05.448" level="INFO">Element 'css=.text-yanone &gt; .d-inline-flex &gt; .h2' contains text 'R$ 69,99'.</msg>
+<status status="PASS" starttime="20220706 20:40:05.408" endtime="20220706 20:40:05.448"/>
+</kw>
+<status status="PASS" starttime="20220706 20:40:05.408" endtime="20220706 20:40:05.449"/>
+</kw>
+<kw name="Selecionar tamanho, cor e comprar" library="chico">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${TAMANHO-CARAMELO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:40:05.449" level="INFO">Clicking element 'css=.cr-option:nth-child(3)'.</msg>
+<status status="PASS" starttime="20220706 20:40:05.449" endtime="20220706 20:40:05.494"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:40:07.502" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220706 20:40:05.494" endtime="20220706 20:40:07.502"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${COR-CARAMELO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:40:07.502" level="INFO">Clicking element 'css=.cr-option-selected &gt; .product-color-option'.</msg>
+<status status="PASS" starttime="20220706 20:40:07.502" endtime="20220706 20:40:07.534"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:40:09.537" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220706 20:40:07.534" endtime="20220706 20:40:09.537"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${COMPRAR-CARAMELO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:40:09.537" level="INFO">Clicking element 'css=.btn-loading:nth-child(1) &gt; span:nth-child(2)'.</msg>
+<status status="PASS" starttime="20220706 20:40:09.537" endtime="20220706 20:40:09.592"/>
+</kw>
+<status status="PASS" starttime="20220706 20:40:05.449" endtime="20220706 20:40:09.592"/>
+</kw>
+<kw name="Ir para a sacola" library="chico">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:40:11.593" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220706 20:40:09.593" endtime="20220706 20:40:11.593"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${VER-SACOLA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:40:11.593" level="INFO">Clicking element 'css=.header-cart-loading:nth-child(1) .btn'.</msg>
+<status status="PASS" starttime="20220706 20:40:11.593" endtime="20220706 20:40:11.901"/>
+</kw>
+<status status="PASS" starttime="20220706 20:40:09.592" endtime="20220706 20:40:11.901"/>
+</kw>
+<kw name="Validar se a mensagem &quot;VOCÊ ESTÁ ACUMULANDO 1 PONTO NO CARTÃO FIDELIDADE!&quot; está aparecendo" library="chico">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:40:13.903" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220706 20:40:11.901" endtime="20220706 20:40:13.903"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${ID-LOYALTY}</arg>
+<arg>${FIDELIDADE}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220706 20:40:13.921" level="INFO">Element 'id=cart-loyalty' contains text 'VOCÊ ESTÁ ACUMULANDO 1 PONTO NO CARTÃO FIDELIDADE!'.</msg>
+<status status="PASS" starttime="20220706 20:40:13.903" endtime="20220706 20:40:13.921"/>
+</kw>
+<status status="PASS" starttime="20220706 20:40:11.901" endtime="20220706 20:40:13.921"/>
+</kw>
+<kw name="Fechar pedido" library="chico">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:40:15.928" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220706 20:40:13.921" endtime="20220706 20:40:15.928"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${FECHAR-PEDIDO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:40:15.928" level="INFO">Clicking element 'css=.btn-xl'.</msg>
+<status status="PASS" starttime="20220706 20:40:15.928" endtime="20220706 20:40:16.614"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:40:19.622" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220706 20:40:16.614" endtime="20220706 20:40:19.622"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220706 20:40:19.622" endtime="20220706 20:40:21.751"/>
+</kw>
+<status status="PASS" starttime="20220706 20:40:13.921" endtime="20220706 20:40:21.751"/>
+</kw>
+<status status="PASS" starttime="20220706 20:40:02.349" endtime="20220706 20:40:21.751"/>
+</test>
+<test id="s1-t3" name="Processo de compra de uma camiseta &quot;Amarelo é Desespero&quot; no site do Chico Rei" line="20">
+<kw name="Aceitar Cookies - 2" library="chico">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220706 20:40:21.753" level="INFO">Opening browser 'Chrome' to base url 'https://chicorei.com/'.</msg>
+<status status="PASS" starttime="20220706 20:40:21.753" endtime="20220706 20:40:24.572"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220706 20:40:24.573" endtime="20220706 20:40:24.687"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${COOKIE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:40:24.687" level="INFO">Clicking element 'id=confirmPolicyButton'.</msg>
+<status status="PASS" starttime="20220706 20:40:24.687" endtime="20220706 20:40:24.739"/>
+</kw>
+<status status="PASS" starttime="20220706 20:40:21.753" endtime="20220706 20:40:24.739"/>
+</kw>
+<kw name="Pesquisar por &quot;Amarelo é desespero&quot; e selecionar a primeira opção da lista de resultados" library="chico">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${BARRA-PESQUISA}</arg>
+<arg>${DESESPERO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220706 20:40:24.740" level="INFO">Typing text 'Amarelo é Desespero' into text field 'id=header-search-input-desktop'.</msg>
+<status status="PASS" starttime="20220706 20:40:24.740" endtime="20220706 20:40:24.844"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:40:26.850" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220706 20:40:24.844" endtime="20220706 20:40:26.850"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CAMISA-DESESPERO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:40:26.850" level="INFO">Clicking element 'xpath=//div[@id='header-search-desktop']/form/div/div/div/div/div/div[2]/div'.</msg>
+<status status="PASS" starttime="20220706 20:40:26.850" endtime="20220706 20:40:27.813"/>
+</kw>
+<status status="PASS" starttime="20220706 20:40:24.740" endtime="20220706 20:40:27.813"/>
+</kw>
+<kw name="Validar o valor de R$ 69,90 - 2" library="chico">
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${ID-DESESPERO69}</arg>
+<arg>${VALOR-DESESPERO}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220706 20:40:27.853" level="INFO">Element 'css=.text-yanone &gt; .d-inline-flex &gt; .h2' contains text 'R$ 69,99'.</msg>
+<status status="PASS" starttime="20220706 20:40:27.814" endtime="20220706 20:40:27.853"/>
+</kw>
+<status status="PASS" starttime="20220706 20:40:27.813" endtime="20220706 20:40:27.853"/>
+</kw>
+<kw name="Selecionar tamanho, cor e comprar - 2" library="chico">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${TAMANHO-DESESPERO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:40:27.854" level="INFO">Clicking element 'css=.cr-option-squared:nth-child(2)'.</msg>
+<status status="PASS" starttime="20220706 20:40:27.853" endtime="20220706 20:40:27.892"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:40:29.899" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220706 20:40:27.892" endtime="20220706 20:40:29.899"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${COR-DESESPERO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:40:29.899" level="INFO">Clicking element 'css=.cr-option-selected &gt; .product-color-option'.</msg>
+<status status="PASS" starttime="20220706 20:40:29.899" endtime="20220706 20:40:29.931"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:40:31.933" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220706 20:40:29.931" endtime="20220706 20:40:31.933"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,300)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220706 20:40:31.934" level="INFO">Executing JavaScript:
+window.scrollTo(0,300)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220706 20:40:31.933" endtime="20220706 20:40:31.938"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:40:33.953" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220706 20:40:31.938" endtime="20220706 20:40:33.953"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${COMPRAR-DESESPERO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:40:33.953" level="INFO">Clicking element 'xpath=//div[@id='product-buy-button-container']/button/span[2]'.</msg>
+<status status="PASS" starttime="20220706 20:40:33.953" endtime="20220706 20:40:34.013"/>
+</kw>
+<status status="PASS" starttime="20220706 20:40:27.853" endtime="20220706 20:40:34.013"/>
+</kw>
+<kw name="Ir para a sacola - 2" library="chico">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:40:36.020" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220706 20:40:34.014" endtime="20220706 20:40:36.020"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${VER-SACOLA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:40:36.020" level="INFO">Clicking element 'css=.header-cart-loading:nth-child(1) .btn'.</msg>
+<status status="PASS" starttime="20220706 20:40:36.020" endtime="20220706 20:40:36.589"/>
+</kw>
+<status status="PASS" starttime="20220706 20:40:34.013" endtime="20220706 20:40:36.589"/>
+</kw>
+<kw name="Fechar pedido - 2" library="chico">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:40:38.595" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220706 20:40:36.590" endtime="20220706 20:40:38.595"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${FECHAR-PEDIDO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:40:38.595" level="INFO">Clicking element 'css=.btn-xl'.</msg>
+<status status="PASS" starttime="20220706 20:40:38.595" endtime="20220706 20:40:39.342"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:40:42.349" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220706 20:40:39.342" endtime="20220706 20:40:42.349"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220706 20:40:42.349" endtime="20220706 20:40:44.470"/>
+</kw>
+<status status="PASS" starttime="20220706 20:40:36.589" endtime="20220706 20:40:44.470"/>
+</kw>
+<status status="PASS" starttime="20220706 20:40:21.752" endtime="20220706 20:40:44.471"/>
+</test>
+<test id="s1-t4" name="Processo de compra de uma camiseta &quot;Erarr é humano&quot; no site do Chico Rei" line="29">
+<kw name="Aceitar Cookies - 3" library="chico">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220706 20:40:44.473" level="INFO">Opening browser 'Chrome' to base url 'https://chicorei.com/'.</msg>
+<status status="PASS" starttime="20220706 20:40:44.472" endtime="20220706 20:40:47.827"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220706 20:40:47.827" endtime="20220706 20:40:47.949"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:40:49.962" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220706 20:40:47.950" endtime="20220706 20:40:49.962"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${COOKIE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:40:49.962" level="INFO">Clicking element 'id=confirmPolicyButton'.</msg>
+<status status="PASS" starttime="20220706 20:40:49.962" endtime="20220706 20:40:49.999"/>
+</kw>
+<status status="PASS" starttime="20220706 20:40:44.472" endtime="20220706 20:40:49.999"/>
+</kw>
+<kw name="Pesquisar por &quot;Erarr&quot; e selecionar a primeira opção da lista de resultados" library="chico">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${BARRA-PESQUISA}</arg>
+<arg>${ERRAR}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220706 20:40:50.001" level="INFO">Typing text 'Erarr' into text field 'id=header-search-input-desktop'.</msg>
+<status status="PASS" starttime="20220706 20:40:50.000" endtime="20220706 20:40:50.068"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:40:52.082" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220706 20:40:50.068" endtime="20220706 20:40:52.082"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CAMISA-ERRAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:40:52.082" level="INFO">Clicking element 'xpath=//div[@id='header-search-desktop']/form/div/div/div/div/div/div[2]/div'.</msg>
+<status status="PASS" starttime="20220706 20:40:52.082" endtime="20220706 20:40:53.003"/>
+</kw>
+<status status="PASS" starttime="20220706 20:40:50.000" endtime="20220706 20:40:53.003"/>
+</kw>
+<kw name="Validar o valor de R$ 69,90 - 3" library="chico">
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:40:54.013" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220706 20:40:53.004" endtime="20220706 20:40:54.013"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${ID-ERRAR69}</arg>
+<arg>${VALOR-ERRAR}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220706 20:40:54.030" level="INFO">Element 'css=.text-yanone &gt; .d-inline-flex &gt; .h2' contains text 'R$ 69,99'.</msg>
+<status status="PASS" starttime="20220706 20:40:54.013" endtime="20220706 20:40:54.030"/>
+</kw>
+<status status="PASS" starttime="20220706 20:40:53.004" endtime="20220706 20:40:54.031"/>
+</kw>
+<kw name="Selecionar tamanho, cor e comprar - 3" library="chico">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${TAMANHO-ERRAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:40:54.031" level="INFO">Clicking element 'css=.cr-option-squared:nth-child(2)'.</msg>
+<status status="PASS" starttime="20220706 20:40:54.031" endtime="20220706 20:40:54.069"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:40:56.081" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220706 20:40:54.069" endtime="20220706 20:40:56.081"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${COR-ERRAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:40:56.081" level="INFO">Clicking element 'css=.cr-option:nth-child(2) &gt; .product-color-option'.</msg>
+<status status="PASS" starttime="20220706 20:40:56.081" endtime="20220706 20:40:56.119"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:40:58.120" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220706 20:40:56.119" endtime="20220706 20:40:58.120"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${COMPRAR-ERRAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:40:58.120" level="INFO">Clicking element 'css=.btn-loading:nth-child(1) &gt; span:nth-child(2)'.</msg>
+<status status="PASS" starttime="20220706 20:40:58.120" endtime="20220706 20:40:58.175"/>
+</kw>
+<status status="PASS" starttime="20220706 20:40:54.031" endtime="20220706 20:40:58.175"/>
+</kw>
+<kw name="Ir para a sacola - 3" library="chico">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:41:00.190" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220706 20:40:58.176" endtime="20220706 20:41:00.190"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${VER-SACOLA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:41:00.190" level="INFO">Clicking element 'css=.header-cart-loading:nth-child(1) .btn'.</msg>
+<status status="PASS" starttime="20220706 20:41:00.190" endtime="20220706 20:41:00.679"/>
+</kw>
+<status status="PASS" starttime="20220706 20:40:58.176" endtime="20220706 20:41:00.679"/>
+</kw>
+<kw name="Validar se a mensagem &quot;De segunda a sexta, das 8h às 18h.&quot; está sendo exibida" library="chico">
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:41:01.687" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220706 20:41:00.679" endtime="20220706 20:41:01.687"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${HORARIO-LOJA}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220706 20:41:01.698" level="INFO">Current page contains text 'De segunda a sexta, das 8h às 18h.'.</msg>
+<status status="PASS" starttime="20220706 20:41:01.687" endtime="20220706 20:41:01.699"/>
+</kw>
+<status status="PASS" starttime="20220706 20:41:00.679" endtime="20220706 20:41:01.699"/>
+</kw>
+<kw name="Fechar pedido - 3" library="chico">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:41:03.711" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220706 20:41:01.699" endtime="20220706 20:41:03.711"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${FECHAR-PEDIDO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:41:03.711" level="INFO">Clicking element 'css=.btn-xl'.</msg>
+<status status="PASS" starttime="20220706 20:41:03.711" endtime="20220706 20:41:04.513"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:41:07.522" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220706 20:41:04.513" endtime="20220706 20:41:07.522"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220706 20:41:07.522" endtime="20220706 20:41:09.680"/>
+</kw>
+<status status="PASS" starttime="20220706 20:41:01.699" endtime="20220706 20:41:09.680"/>
+</kw>
+<status status="PASS" starttime="20220706 20:40:44.472" endtime="20220706 20:41:09.681"/>
+</test>
+<test id="s1-t5" name="Processo de compra de uma camiseta &quot;Nem Te Vi&quot; no site do Chico Rei" line="39">
+<kw name="Aceitar Cookies - 4" library="chico">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220706 20:41:09.683" level="INFO">Opening browser 'Chrome' to base url 'https://chicorei.com/'.</msg>
+<status status="PASS" starttime="20220706 20:41:09.683" endtime="20220706 20:41:12.594"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220706 20:41:12.594" endtime="20220706 20:41:12.710"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:41:14.726" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220706 20:41:12.710" endtime="20220706 20:41:14.726"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${COOKIE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:41:14.726" level="INFO">Clicking element 'id=confirmPolicyButton'.</msg>
+<status status="PASS" starttime="20220706 20:41:14.726" endtime="20220706 20:41:14.767"/>
+</kw>
+<status status="PASS" starttime="20220706 20:41:09.683" endtime="20220706 20:41:14.767"/>
+</kw>
+<kw name="Pesquisar por &quot;Nem Te Vi&quot; e selecionar a primeira opção da lista de resultados" library="chico">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${BARRA-PESQUISA}</arg>
+<arg>${NEMTEVI}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220706 20:41:14.768" level="INFO">Typing text 'Nem Te Vi' into text field 'id=header-search-input-desktop'.</msg>
+<status status="PASS" starttime="20220706 20:41:14.768" endtime="20220706 20:41:14.841"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:41:16.845" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220706 20:41:14.841" endtime="20220706 20:41:16.845"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CAMISA-NEMTEVI}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:41:16.845" level="INFO">Clicking element 'xpath=//div[@id='header-search-desktop']/form/div/div/div/div/div/div[2]/div'.</msg>
+<status status="PASS" starttime="20220706 20:41:16.845" endtime="20220706 20:41:17.800"/>
+</kw>
+<status status="PASS" starttime="20220706 20:41:14.768" endtime="20220706 20:41:17.800"/>
+</kw>
+<kw name="Validar o valor de R$ 69,90 - 4" library="chico">
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${ID-NEMTEVI69}</arg>
+<arg>${VALOR-NEMTEVI}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220706 20:41:17.839" level="INFO">Element 'css=.text-yanone &gt; .d-inline-flex &gt; .h2' contains text 'R$ 69,99'.</msg>
+<status status="PASS" starttime="20220706 20:41:17.801" endtime="20220706 20:41:17.839"/>
+</kw>
+<status status="PASS" starttime="20220706 20:41:17.800" endtime="20220706 20:41:17.839"/>
+</kw>
+<kw name="Selecionar tamanho, cor e comprar - 4" library="chico">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${TAMANHO-NEMTEVI}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:41:17.840" level="INFO">Clicking element 'css=.cr-option-squared:nth-child(1)'.</msg>
+<status status="PASS" starttime="20220706 20:41:17.840" endtime="20220706 20:41:17.879"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:41:19.886" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220706 20:41:17.879" endtime="20220706 20:41:19.886"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${COR-NEMTEVI}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:41:19.886" level="INFO">Clicking element 'css=.cr-option:nth-child(2) &gt; .product-color-option'.</msg>
+<status status="PASS" starttime="20220706 20:41:19.886" endtime="20220706 20:41:19.924"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:41:21.928" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220706 20:41:19.925" endtime="20220706 20:41:21.928"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${COMPRAR-NEMTEVI}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:41:21.928" level="INFO">Clicking element 'css=.btn-loading:nth-child(1) &gt; span:nth-child(2)'.</msg>
+<status status="PASS" starttime="20220706 20:41:21.928" endtime="20220706 20:41:21.985"/>
+</kw>
+<status status="PASS" starttime="20220706 20:41:17.840" endtime="20220706 20:41:21.985"/>
+</kw>
+<kw name="Ir para a sacola - 4" library="chico">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:41:23.993" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220706 20:41:21.986" endtime="20220706 20:41:23.993"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${VER-SACOLA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:41:23.993" level="INFO">Clicking element 'css=.header-cart-loading:nth-child(1) .btn'.</msg>
+<status status="PASS" starttime="20220706 20:41:23.993" endtime="20220706 20:41:24.307"/>
+</kw>
+<status status="PASS" starttime="20220706 20:41:21.986" endtime="20220706 20:41:24.307"/>
+</kw>
+<kw name="Validar se a mensagem &quot;Compre parcelado com cartão ou á vista com boleto ou depósito&quot; está sendo exibida" library="chico">
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:41:25.323" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220706 20:41:24.308" endtime="20220706 20:41:25.323"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${MSG-PGTO}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220706 20:41:25.335" level="INFO">Current page contains text 'Compre parcelado com cartão ou a vista com boleto ou depósito'.</msg>
+<status status="PASS" starttime="20220706 20:41:25.323" endtime="20220706 20:41:25.335"/>
+</kw>
+<status status="PASS" starttime="20220706 20:41:24.307" endtime="20220706 20:41:25.335"/>
+</kw>
+<kw name="Fechar pedido - 4" library="chico">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:41:27.346" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220706 20:41:25.336" endtime="20220706 20:41:27.346"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${FECHAR-PEDIDO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:41:27.346" level="INFO">Clicking element 'css=.btn-xl'.</msg>
+<status status="PASS" starttime="20220706 20:41:27.346" endtime="20220706 20:41:27.988"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:41:30.993" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220706 20:41:27.988" endtime="20220706 20:41:30.993"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220706 20:41:30.993" endtime="20220706 20:41:33.145"/>
+</kw>
+<status status="PASS" starttime="20220706 20:41:25.336" endtime="20220706 20:41:33.145"/>
+</kw>
+<status status="PASS" starttime="20220706 20:41:09.682" endtime="20220706 20:41:33.146"/>
+</test>
+<test id="s1-t6" name="Processo de compra de uma camiseta &quot;Alceu Dispor&quot; no site do Chico Rei" line="48">
+<kw name="Aceitar Cookies - 5" library="chico">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220706 20:41:33.148" level="INFO">Opening browser 'Chrome' to base url 'https://chicorei.com/'.</msg>
+<status status="PASS" starttime="20220706 20:41:33.148" endtime="20220706 20:41:35.888"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220706 20:41:35.888" endtime="20220706 20:41:36.005"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:41:38.013" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220706 20:41:36.005" endtime="20220706 20:41:38.013"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${COOKIE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:41:38.013" level="INFO">Clicking element 'id=confirmPolicyButton'.</msg>
+<status status="PASS" starttime="20220706 20:41:38.013" endtime="20220706 20:41:38.055"/>
+</kw>
+<status status="PASS" starttime="20220706 20:41:33.147" endtime="20220706 20:41:38.056"/>
+</kw>
+<kw name="Pesquisar por &quot;Alceu Dispor&quot; e selecionar a primeira opção da lista de resultados" library="chico">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${BARRA-PESQUISA}</arg>
+<arg>${ALCEU}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220706 20:41:38.056" level="INFO">Typing text 'Alceu Dispor' into text field 'id=header-search-input-desktop'.</msg>
+<status status="PASS" starttime="20220706 20:41:38.056" endtime="20220706 20:41:38.130"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:41:40.147" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220706 20:41:38.130" endtime="20220706 20:41:40.147"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CAMISA-ALCEU}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:41:40.147" level="INFO">Clicking element 'xpath=//div[@id='header-search-desktop']/form/div/div/div/div/div/div[2]/div'.</msg>
+<status status="PASS" starttime="20220706 20:41:40.147" endtime="20220706 20:41:41.108"/>
+</kw>
+<status status="PASS" starttime="20220706 20:41:38.056" endtime="20220706 20:41:41.108"/>
+</kw>
+<kw name="Validar o valor de R$ 69,90 - 5" library="chico">
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${ID-ALCEU69}</arg>
+<arg>${VALOR-ALCEU}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220706 20:41:41.148" level="INFO">Element 'css=.text-yanone &gt; .d-inline-flex &gt; .h2' contains text 'R$ 69,99'.</msg>
+<status status="PASS" starttime="20220706 20:41:41.109" endtime="20220706 20:41:41.148"/>
+</kw>
+<status status="PASS" starttime="20220706 20:41:41.109" endtime="20220706 20:41:41.148"/>
+</kw>
+<kw name="Selecionar tamanho, cor e comprar - 5" library="chico">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${TAMANHO-ALCEU}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:41:41.148" level="INFO">Clicking element 'css=.cr-option-squared:nth-child(4)'.</msg>
+<status status="PASS" starttime="20220706 20:41:41.148" endtime="20220706 20:41:41.189"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:41:43.198" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220706 20:41:41.190" endtime="20220706 20:41:43.198"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${COR-ALCEU}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:41:43.198" level="INFO">Clicking element 'css=.cr-option:nth-child(2) &gt; .product-color-option'.</msg>
+<status status="PASS" starttime="20220706 20:41:43.198" endtime="20220706 20:41:43.238"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:41:45.253" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220706 20:41:43.238" endtime="20220706 20:41:45.253"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${COMPRAR-ALCEU}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:41:45.253" level="INFO">Clicking element 'css=.btn-loading:nth-child(1) &gt; span:nth-child(2)'.</msg>
+<status status="PASS" starttime="20220706 20:41:45.253" endtime="20220706 20:41:45.309"/>
+</kw>
+<status status="PASS" starttime="20220706 20:41:41.148" endtime="20220706 20:41:45.309"/>
+</kw>
+<kw name="Ir para a sacola - 5" library="chico">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:41:47.313" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220706 20:41:45.310" endtime="20220706 20:41:47.313"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${VER-SACOLA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:41:47.313" level="INFO">Clicking element 'css=.header-cart-loading:nth-child(1) .btn'.</msg>
+<status status="PASS" starttime="20220706 20:41:47.313" endtime="20220706 20:41:47.637"/>
+</kw>
+<status status="PASS" starttime="20220706 20:41:45.310" endtime="20220706 20:41:47.637"/>
+</kw>
+<kw name="Validar se a mensagem &quot;Sua primeira troca na Chico Rei é por nossa conta!&quot; está sendo exibida" library="chico">
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:41:48.638" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220706 20:41:47.638" endtime="20220706 20:41:48.638"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${TROCA}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220706 20:41:48.650" level="INFO">Current page contains text 'Sua primeira troca na Chico Rei é por nossa conta!'.</msg>
+<status status="PASS" starttime="20220706 20:41:48.638" endtime="20220706 20:41:48.650"/>
+</kw>
+<status status="PASS" starttime="20220706 20:41:47.637" endtime="20220706 20:41:48.650"/>
+</kw>
+<kw name="Fechar pedido - 5" library="chico">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:41:50.655" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220706 20:41:48.651" endtime="20220706 20:41:50.655"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${FECHAR-PEDIDO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 20:41:50.655" level="INFO">Clicking element 'css=.btn-xl'.</msg>
+<status status="PASS" starttime="20220706 20:41:50.655" endtime="20220706 20:41:51.353"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 20:41:54.366" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220706 20:41:51.353" endtime="20220706 20:41:54.366"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220706 20:41:54.366" endtime="20220706 20:41:56.528"/>
+</kw>
+<status status="PASS" starttime="20220706 20:41:48.650" endtime="20220706 20:41:56.528"/>
+</kw>
+<status status="PASS" starttime="20220706 20:41:33.147" endtime="20220706 20:41:56.528"/>
+</test>
+<status status="PASS" starttime="20220706 20:39:58.937" endtime="20220706 20:41:56.530"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="6" fail="0" skip="0" id="s1" name="Chico">Chico</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

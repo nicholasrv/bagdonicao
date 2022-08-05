@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 19 - App To do: Segurança</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="l-app">
+        <article>
+            <h1 class="h1">Faça login</h1>
+            <!--
+                Utilizei o evento onsubmit do HTML, 
+                mas poderia utilizar addEventListener também.
+            -->
+            <form method="post" onsubmit="validarCredenciaisDoUsuario(event)">
+                <div class="u-my">
+                    <label class="sr-only" for="email">E-mail</label>
+                    <input class="c-form__campo" name="email" type="text" placeholder="E-mail" required>
+                </div>
+                <div class="u-my">
+                    <label class="sr-only" for="senha">Senha</label>
+                    <input class="c-form__campo" name="senha" type="password" placeholder="Senha" required>
+                </div>
+                <button class="c-form__botao u-my" type="submit">Entrar</button>
+            </form>
+        </article>
+    </div>
+    
+    <script type="text/javascript" src="./app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+
+@import "../../../node_modules/bootstrap/scss/card";
+
+.card {
+    border-radius: 1.5rem;
+    transition-property: all;
+    transition-duration: .5s;
+}
+
+.card:hover {
+    transform: scale(1.025) translateY(-5px);
+}
+
+.card-body {
+    padding: {
+        top: 2rem;
+        bottom: 2rem;
+    };
+}

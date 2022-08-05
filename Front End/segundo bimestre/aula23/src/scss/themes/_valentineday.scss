@@ -1,0 +1,17 @@
+
+// Sua personalização de cores, fontes, etc.
+
+// Removendo uma ou mais cores do tema.
+// Nota: Observe que realizei a remoção após a importação das variáveis.
+$theme-colors: map-remove($theme-colors, "info", "secondary");
+
+// Alterando e criando novas cores.
+$theme-colors: (
+  "primary": #ff4136,
+  "cor-personalizada": pink
+);
+
+$bg: rgb(245, 237, 238);
+
+// Saiba mais sobre personalização de componentes em: 
+// https://getbootstrap.com.br/docs/4.1/getting-started/theming/

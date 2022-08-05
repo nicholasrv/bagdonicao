@@ -1,0 +1,25 @@
+{
+  "name": "aula-23_task-runners",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prod": "gulp compilacao",
+    "dev": "gulp desenvolvimento"
+  },
+  "author": "Willian Sant Anna",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/register": "^7.17.7",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.50.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3"
+  }
+}
