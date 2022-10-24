@@ -1,0 +1,10 @@
+.titulo{
+    background-color: red;
+    color: black;
+    position:fixed;
+    align-content:center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:x-large;
+    font-weight: bold;
+}
+
