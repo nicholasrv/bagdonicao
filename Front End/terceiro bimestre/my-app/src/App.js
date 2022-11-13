@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
 import {useState} from "react";
 
 function App() {
@@ -10,10 +8,10 @@ function App() {
 
     function salvarMusica(){
 
-    if(nomeArtista = "" || nomeMusica = ""){
+    if(nomeArtista === "" || nomeMusica === ""){
         alert("Preencha os campos para salvar sua música na lista!");
       }
-    
+
     else {
       setMusica([...musicas, {
         nomeDoArtista: nomeArtista,
@@ -30,7 +28,7 @@ function App() {
         <form>
           <input value={nomeArtista} 
           onChange={(event) => setNomeArtista(event.target.value)} 
-          placeholder="Digite o seu nome"/>
+          placeholder="Digite o nome do artista"/>
 
           <input value={nomeMusica} 
           onChange={(event) => setNomeMusica(event.target.value)} 
@@ -46,7 +44,7 @@ function App() {
             return(
               <div>
               <h1>{musica.nomeDoArtista}</h1>
-              <h2>{musica.nomeDaMusica}</h2>
+              <h1>{musica.nomeDaMusica}</h1>
               </div>
             )
           })

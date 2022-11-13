@@ -3,9 +3,17 @@ function Form(props){
 
   function salvarFilme(){
    
+    const minimum3chars = /^.{3,30}$/;
+
     if(props.nomeFilme == "" || props.imagemFilme == ""){
       alert("Preencha os campos para salvar o filme");
-    }else{
+    }
+    
+    else if(props.nomeFilme.value.match(minimum3chars) && props.imagemFilme.value.match(minimum3chars)){
+      alert("Favor inserir ao menos três caracteres em cada campo.")
+    }
+    
+    else{
 
       props.setFilmes([...props.filmes, {
         nome:props.nomeFilme,
@@ -15,7 +23,6 @@ function Form(props){
     }
 
   }
-
 
   return (
     <form>
