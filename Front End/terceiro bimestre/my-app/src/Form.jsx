@@ -12,7 +12,7 @@ function Form(props){
                 alert("Preencha os campos para salvar sua música na lista!");
               }
 
-            else if(props.nomeArtista.length<8 || props.nomeMusica.length<8){
+            else if(props.nomeArtista.length<3 || props.nomeMusica.length<3){
                 alert("Favor inserir ao menos três caracteres em cada campo.")
               }
               
@@ -26,7 +26,7 @@ function Form(props){
 
     return(
 
-        <form>
+        <form className="form">
         <input value={props.nomeArtista} 
         onChange={(event) => props.setNomeArtista(event.target.value)} 
         placeholder="Digite o nome do artista"/>
@@ -35,7 +35,7 @@ function Form(props){
         onChange={(event) => props.setNomeMusica(event.target.value)} 
         placeholder="Digite o nome da musica"/>
 
-        <button type="button" onClick={salvarMusica}>Salvar</button>
+        <button type="button" className="button" onClick={salvarMusica}>Salvar</button>
 
       </form>
         

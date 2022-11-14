@@ -14,7 +14,7 @@ function App() {
 
       <div className="wrapper">
 
-        <h1>Cadastro de Músicas</h1>
+        <h1>Monte sua Playlist!</h1>
 
         <Form
         nomeArtista = {nomeArtista}
@@ -25,15 +25,15 @@ function App() {
         setMusica = {setMusica}
         />
 
+        <div className="listMusicas">
         {
           musicas.map((musica,index)=>{
             return(
               <CardMusica musica={musica} key={index}/>
-
-
             )
           })
         }
+        </div>
 
       </div>
     )

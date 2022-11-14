@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Nunito:wght@300&display=swap');
 
 *, 
 *::before,
@@ -13,27 +13,50 @@ body{
     list-style-type: none;
     font-family: Roboto, sans-serif;
     margin: 2rem;
+    background-color: #f4f9ff;
 }
 
 .wrapper{
     display: grid;
+    text-align: center;
     grid-template-columns: repeat(auto-fit, minmax(12rem, 16 rem));
     gap: 2rem;
-    justify-content: center;
+    justify-content:center;
 
 }
 
 .card{
-    overflow: hidden;
-    box-shadow: 0 2px 20px black;
-    border-radius: 0.2rem;
-    display: flex;
-    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+    /* font-weight: bolder; */
+    /* overflow: hidden; */
+    /* box-shadow: 0 2px 20px black;
+    border-radius: 0.2rem; */
+    display:flex;
+    flex-direction: row;
     justify-content: space-between;
     cursor: pointer;
-    transition: transform 200ms ease-in;
+    /* border: 1px solid black */
+    /* transition: transform 200ms ease-in; */
+    /* padding: 15px; */
+}
+
+.line{
+    border-top: 1px dashed #adcaec;
+    margin: 10px 0;
+}
 
 
+.form{
+    
+}
+
+.form input{
+    padding: 5px;
+}
+
+
+.button{
+    padding: 5px 15px;
 }
 
 
